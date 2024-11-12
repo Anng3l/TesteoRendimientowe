@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+.containerTotal{
+    background-image: url(../../assets/images/wallpaper1.png);
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.938);
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+.header h1 {
+    font-size: 2.8em;
+    color: #007bff;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(43, 42, 42, 0.438);
+}
+.header p{
+    font-size: 1.5em;
+    color: #F4B414;
+}
+/* .cardsContainer{
+/*     
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px; */
+/* } */ 
+.card{
+    position: relative;
+    background: rgba(255, 255, 255, 0.1); /* Más transparente */
+    backdrop-filter: blur(8px); /* Efecto de desenfoque en el fondo */
+    -webkit-backdrop-filter: blur(3px); /* Para compatibilidad con Safari */
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.619);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden; /* Asegura que el contenido no se salga */
+}
+.card:hover{
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.65); /* Ligeramente más opaco en hover */
+    box-shadow: 0 12px 40px rgba(0, 17, 255, 0.616);
+}
+
+.cardIcon{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #007bff, #F4B414);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px; 
+    color: white;
+    font-size: 2em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.card h2{
+    color: #F4B414;
+    margin-bottom: 15px;
+    font-size: 2em;
+    position: relative; /* Para mantenerlo por encima del blur */
+    z-index: 1;
+}
+.card p{
+    color: #333;
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+.timeline{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+.timeline {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.619);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s ease;
+}
+
+.timeline:hover {
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 12px 40px rgba(0, 17, 255, 0.616);
+}
+
+.timeline h2 {
+    text-align: center;
+    color: #F4B414;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.timelineItem {
+    padding: 20px;
+    border-left: 4px solid #007bff;
+    margin-bottom: 25px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 0 15px 15px 0;
+    transition: all 0.3s ease;
+}
+
+.timelineItem:hover {
+    background: rgba(255, 255, 255, 0.65);
+    transform: translateX(10px);
+}
+
+.timelineItem p {
+    font-size: 1.5em;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+.timelineItem::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: -11px;
+    top: 28px;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+    z-index: 2;
+}
+
+.timelineDate {
+    font-weight: bold;
+    color: #1a2a6c;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-item h3 {
+    color: #b21f1f;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    position: relative;
+    z-index: 1;
+}
+
+@media(max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline {
+        margin: 20px;
+    }
+    
+    .timelineItem:hover {
+        transform: translateX(5px);
+    }
+}

@@ -1,0 +1,32 @@
+.logo {
+    max-width: 50px;
+}
+
+
+.me-auto {
+    margin: auto;
+}
+
+
+
+#navigationBar .nav-link {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  #navigationBar .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 4px;
+  }
+
+  
+  .nav-link {
+    text-align: center; 
+  }
+  
+  .nav-link svg {
+    margin-bottom: 5px; 
+  }
+  

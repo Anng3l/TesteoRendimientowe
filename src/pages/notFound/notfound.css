@@ -1,0 +1,40 @@
+.general {
+    height: 100vh;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-color: blueviolet;
+}
+
+.general::before {
+    background-image: url("../../assets/images/haunter.png");
+    background-size: cover;
+
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+}
+
+.error {
+    font-weight: 900;
+
+    font-size: 400px;
+
+    color: white;
+
+    isolation: isolate;
+
+    margin: 0;
+    padding: 0;
+
+    height: auto;
+}
+
+.description {
+    color: white;
+    font-weight: 900;
+    isolation: isolate;
+}
